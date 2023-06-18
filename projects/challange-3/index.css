@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    background-image: url(./space.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+    min-height:100%;
+}
+body::before {
+    content: '';
+    position:absolute;
+    inset:0;
+    background-color: rgb(0 0 0 / .2);
+    isolation: isolate;
+    z-index: -1;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav a {
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    font-size:.9rem;
+}
+.page-header {
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position:absolute;
+    width:100%;
+    top:0;
+    left:0;
+}
+.logo {
+    display:flex;
+    align-items: center;
+    gap:10px;
+    font-size:1.2rem;
+    font-weight:700;
+    color:white;
+    text-decoration: none;
+}
+.logo svg {
+    width: 30px;
+    height:auto;
+}
+.page-header nav {
+    display: flex;
+    gap:25px;
+}
+.Register {
+    border: 1px white solid;
+    border-radius: 30px;
+}
+.page-tittle {
+    display:flex;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+}
+p {
+    font-weight: lighter;
+    font-size: 32px;
+}
+h1 {
+    font-weight: lighter;
+    font-size: 150px;
+}
+.down {
+    width:50px;
+    height: 50px;
+    color: white;
+}
+
+.more {
+    position:absolute;
+    bottom:0;
+    text-align: center;
+    opacity: .5;
+    font-weight: lighter;
+}

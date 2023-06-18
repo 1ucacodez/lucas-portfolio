@@ -1,0 +1,82 @@
+:root {
+    --blue:#06A4D3;
+    --light-blue:#5AD8C2;
+    --lime:#0FD09C;
+}
+
+* {
+    margin:0;
+    padding:0;
+}
+body, html {
+    width:100%;
+    height:100%;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(12, 25, 25);
+    overflow: hidden;
+}
+.main-top {
+    background-image:linear-gradient(to bottom right, var(--blue), var(--light-blue)); 
+    grid-area: mt;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    padding: 5vh 5vw;
+}
+.main-top-middle {
+    background-image: url(./statue.jpeg);
+    background-size: cover;
+    background-position: center;
+    grid-area: mtm;
+
+}
+.main-top-end {
+    background-image: url(./miami-building.jpeg);
+    background-size: cover;
+    grid-area: mte;
+
+}
+.main-bottom {
+    background-image: url(./forest.jpeg);
+    background-size: cover;
+    grid-area: mb;
+
+}
+.main-bottom-middle {
+    background-color: var(--lime) ;
+    grid-area: mbm;
+    display:flex;
+    gap: 3rem;
+    padding:5vh 5vw;
+    align-items: center;
+}
+.page-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    display: grid;
+    height:100%;
+    grid-template-areas:
+    'mt mtm mte mte'
+    'mt mtm mte mte'
+    'mb mbm mbm mbm' ;
+}
+.SUAVE {
+    color: white;
+    margin-bottom: 1em;
+}
+p {
+    color: white;
+    line-height: 1.8rem;
+}
+.project {
+    color: white;
+}
+
+h2 {
+    font-size:2.8rem;
+    font-weight: 600;
+    text-shadow: 0 0 2px rgb(0 0 0 / .3);
+}
